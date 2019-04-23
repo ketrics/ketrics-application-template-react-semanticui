@@ -1,8 +1,6 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const CompressionPlugin = require('compression-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
@@ -38,7 +36,6 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(),
-        new UglifyJsPlugin(),
         new CompressionPlugin()
     ]
 };
