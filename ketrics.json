@@ -1,0 +1,32 @@
+{
+  "entryPoint": "./build/bundle.js",
+  "scripts": {
+    "fetchFilters": [
+      {
+        "type": "query",
+        "name": "years",
+        "description": "Selecciona todos los años disponibles en contabilidad",
+        "file": "./ketrics/scripts/fetchYears.sql"
+      }
+    ],
+    "runReport": [
+      {
+        "type": "dml",
+        "description": "Prepare data",
+        "file": "./ketrics/scripts/report-preparation.sql"
+      },
+      {
+        "type": "query",
+        "name": "detalle",
+        "description": "Balance por Cuentas",
+        "file": "./ketrics/scripts/report-query-01.sql"
+      },
+      {
+        "type": "query",
+        "name": "totales",
+        "description": "Resultados",
+        "file": "./ketrics/scripts/report-query-02.sql"
+      }
+    ]
+  }
+}
