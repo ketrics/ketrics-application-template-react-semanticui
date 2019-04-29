@@ -4,7 +4,7 @@
   "description": "Template to build Ketrics Application with React and Semantic UI",
   "private": true,
   "scripts": {
-    "build": "webpack --config webpack.prod.js",
+    "build": "webpack --config webpack.prod.js && git add .",
     "start": "webpack-dev-server --open --config webpack.dev.js"
   },
   "keywords": [
@@ -34,8 +34,8 @@
     "webpack-dev-server": "^3.3.1"
   },
   "dependencies": {
-    "ketrics-ui-react": "^0.1.0",
-    "ketrics-utils": "^0.2.0",
+    "ketrics-ui-react": "^1.0.7",
+    "ketrics-utils": "^0.2.8",
     "lodash": "^4.17.11",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
