@@ -8,17 +8,22 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
 </head>
 <body>
-    <div id="ketrics-application"
-         applicationUUID="eaa0f073-e555-465e-9f45-d1f479832b3a"
-         dataserverUUID="51ac88e5-a48a-48fc-b943-ef3566bc1306"
-    ></div>
+<div id="ketrics-application"></div>
 
-    <script>
-        window.env = {
-            API_KHN: "http://localhost:8000/v1",
-            WS_HOST: "localhost:3001",
-            CDN_HOST: "http://localhost:5000"
-        };
-    </script>
+<script ketrics-application-uuid=""
+        ketrics-application-container-id="ketrics-application"
+        ketrics-application-id="development"
+></script>
+
+<script>
+    window.env = {
+        API_KHN: "http://localhost:8000/v1",
+        WS_HOST: "localhost:3001",
+        CDN_HOST: "http://localhost:5000"
+    };
+    sessionStorage.setItem('ketricsApplicationId', 'development');
+    sessionStorage.setItem('dataserver', '');
+</script>
 </body>
 </html>
+
