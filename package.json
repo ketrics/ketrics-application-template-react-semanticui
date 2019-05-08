@@ -1,6 +1,6 @@
 {
   "name": "ketrics-application-template-react-semanticui",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Template to build Ketrics Application with React and Semantic UI",
   "private": true,
   "scripts": {
