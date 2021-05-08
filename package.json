@@ -36,7 +36,7 @@
   "dependencies": {
     "ketrics-ui-react": "^1.5.1",
     "ketrics-utils": "^0.4.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "semantic-ui-react": "^0.86.0",
